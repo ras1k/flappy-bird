@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird Enhanced</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="game-container" id="gameContainer">
+    <div class="bird" id="bird"></div>
+    <div class="score" id="score">Score: 0</div>
+    <div class="speed-control" id="speedControl">
+        Speed: <input type="range" min="1" max="5" step="0.1" value="2" id="speedSlider" />
+    </div>
+
+    <!-- Audio elements for crash and game over sounds -->
+    <audio id="crashSound" src="crash.mp3"></audio> <!-- Ensure this file exists -->
+    <audio id="gameOverSound" src="end.mp3"></audio> <!-- Ensure this file exists -->
+    <audio id="passSound" src="pass.mp3"></audio>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light sky blue */
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: red; /* Solid color fallback */
+    border-radius: 50%; /* Circular shape for the bird */
+    z-index: 10;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/45/Antu_emblem-airplane.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.pipe {
+    position: absolute;
+    width: 60px;
+    background-color: #4caf50; /* Green */
+}
+
+.pipe-top {
+    top: 0;
+}
+
+.pipe-bottom {
+    bottom: 0;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.speed-control {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
